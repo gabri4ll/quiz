@@ -177,9 +177,14 @@ footer {
 
 #next-btn:hover,
 #next-btn:active {
-    background-color: #ff69b4; /* Cor rosa ao passar o mouse ou clicar */
+    background-color: #9c225d; /* Cor rosa ao passar o mouse ou clicar */
 }
 
 #next-btn:focus {
     outline: none; /* Remove o contorno ao focar */
+}
+
+#textoNatal {
+    max-width: 800px;
+    margin: 0 auto;
 }
