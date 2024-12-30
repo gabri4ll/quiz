@@ -48,6 +48,7 @@ header {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
 }
 
 .slides img {
@@ -124,13 +125,13 @@ footer {
     font-size: 16px;
 }
 
-#restart-btn {
+/* #restart-btn {
     background-color: #ff4500;
 }
 
 #restart-btn:hover {
     background-color: #e03b00;
-}
+} */
 
 #quiz-form {
     text-align: center;
@@ -187,4 +188,17 @@ footer {
 #textoNatal {
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#restart-btn {
+    background-color: #9c225d; /* Cor padrão do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Suaviza a transição de cores */
 }
