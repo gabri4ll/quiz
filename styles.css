@@ -163,3 +163,23 @@ footer {
 .quiz-option input {
     justify-self: start; /* Garante que os inputs fiquem alinhados à esquerda */
 }
+
+#next-btn {
+    background-color: #9c225d; /* Cor padrão do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Suaviza a transição de cores */
+}
+
+#next-btn:hover,
+#next-btn:active {
+    background-color: #ff69b4; /* Cor rosa ao passar o mouse ou clicar */
+}
+
+#next-btn:focus {
+    outline: none; /* Remove o contorno ao focar */
+}
