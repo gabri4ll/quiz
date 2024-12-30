@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#section1">Sobre</a></li>
+                <li><a href="#section2">Photos</a></li>
+                <li><a href="#section3">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section1" class="section">
+            <h1>Sobre</h1>
+        </section>
+        <section id="section2" class="section">
+            <h1>Photos</h1>
+            <div class="slider">
+                <button class="prev">&#10094;</button>
+                <div class="slides">
+                    <img src="photos/imagem1.jpeg" alt="Imagem 1">
+                    <img src="photos/imagem2.jpeg" alt="Imagem 2">
+                    <img src="photos/imagem3.jpeg" alt="Imagem 3">
+                    <img src="photos/imagem4.jpeg" alt="Imagem 3">
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+        <section id="section3" class="section">
+            <h2>Quiz Interativo</h2>
+            <div id="quiz-container">
+                <form id="quiz-form">
+                    <div id="question-container">
+                        <label class="quiz-option">
+                            <input type="radio" name="answer" value="0"> Alternativa 1
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="answer" value="1"> Alternativa 2
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="answer" value="2"> Alternativa 3
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="answer" value="3"> Alternativa 4
+                        </label>
+                    </div>
+                    <div id="button-container">
+                        <button type="button" id="next-btn">Próximo</button>
+                        <button type="button" id="restart-btn" style="display: none;">Reiniciar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>@gh</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
