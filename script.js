@@ -33,6 +33,7 @@ const slides = document.querySelector(".slides");
 let startX = 0; // Posição inicial do toque
 let currentX = 0; // Posição atual do toque durante o movimento
 let isDragging = false; // Indicador se o usuário está arrastando
+let threshold = 50; // Distância mínima para considerar um deslizar válido
 
 // Início do toque
 slides.addEventListener("touchstart", (e) => {
@@ -52,16 +53,22 @@ slides.addEventListener("touchend", () => {
     isDragging = false;
 
     const difference = currentX - startX;
-    if (difference > 50) {
+
+    if (difference > threshold) {
         // Deslizou para a direita
-        index--;
-        showSlide(index);
-    } else if (difference < -50) {
+        if (index > 0) {
+            index--;
+            showSlide(index);
+        }
+    } else if (difference < -threshold) {
         // Deslizou para a esquerda
-        index++;
-        showSlide(index);
+        if (index < document.querySelectorAll(".slides img").length - 1) {
+            index++;
+            showSlide(index);
+        }
     }
 });
+
 
 
 
