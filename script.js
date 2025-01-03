@@ -106,7 +106,7 @@ function showQuestion() {
 function showResults() {
     questionContainer.innerHTML = `
         <h3>Você acertou ${score} de ${quizData.length} perguntas.</h3>
-        <p>${score > 7 ? "Parabéns! Você foi muito bem!<br><a href='https://open.spotify.com/intl-pt/track/77uKOPe9LycSfrXCKqfJp2?si=b89aa6052dff41cc' target='_blank'>Clique aqui</a>" 
+        <p>${score > 7 ? "Parabéns! Você foi muito bem!<br><a href='https://open.spotify.com/track/1OubIZ0ARYCUq5kceYUQiO?si=z06MkPGIRUKkFEipUq8LKA&context=spotify%3Aalbum%3A6f6tko6NWoH00cyFOl4VYQ' target='_blank'>Clique aqui</a>" 
             : "Tente novamente para descobrir seu presente."}</p>
     `;
     nextButton.style.display = "none";
