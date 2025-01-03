@@ -140,3 +140,9 @@ restartButton.addEventListener("click", () => {
 });
 
 window.onload = showQuestion;
+
+document.getElementById("verCartaoBtn").addEventListener("click", () => {
+    const texto = document.getElementById("textoNatal");
+    texto.style.display = "block"; // Exibe o texto
+    document.getElementById("verCartaoBtn").style.display = "none"; // Oculta o botão
+});
